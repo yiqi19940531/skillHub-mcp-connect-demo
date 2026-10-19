@@ -1,0 +1,154 @@
+export type Grant = { type: "user" | "team"; id: string };
+export type Team = {
+  team_id: string;
+  name: string;
+  description: string;
+  archived: boolean;
+  internal?: boolean;
+  membership_role?: string;
+  owner_user_id: string;
+  revision: number;
+  members?: Membership[];
+};
+export type Membership = {
+  membership_id: string;
+  team_id: string;
+  user_id: string;
+  role: string;
+  status: string;
+};
+export type User = {
+  user_id: string;
+  username: string;
+  display_name: string;
+  roles: string[];
+  disabled?: boolean;
+  revision: number;
+};
+export type Me = User & { teams: Team[] };
+export type Category = { category_id: string; name: string; count: number };
+export type Manifest = {
+  path: string;
+  size: number;
+  sha256: string;
+  binary: boolean;
+};
+export type SkillVersion = {
+  version: string;
+  status: string;
+  sha256: string;
+  manifest: Manifest[];
+  risk: string;
+  scan: { path: string; message: string }[];
+  review_id: string | null;
+  created_at: string;
+  proposed_metadata?: { visibility: string; acl: Grant[] };
+};
+export type Skill = {
+  skill_id: string;
+  name: string;
+  display_name: string;
+  description: string;
+  category_id: string;
+  tags: string[];
+  visibility: string;
+  acl?: Grant[];
+  owner_team_id: string;
+  owner_user_id: string;
+  current_version: string | null;
+  team_name: string;
+  author_name: string;
+  favorite: boolean;
+  favorite_count: number;
+  rating: number | null;
+  rating_count: number;
+  risk: string;
+  can_edit: boolean;
+  revision: number;
+  versions?: SkillVersion[];
+  allowed_actions: string[];
+};
+export type Page<T> = { items: T[]; total: number; next_cursor: string | null };
+export type Collection = {
+  collection_id: string;
+  name: string;
+  owner_team_id: string;
+  count: number;
+  can_manage: boolean;
+  revision: number;
+};
+export type Review = {
+  review_id: string;
+  kind: string;
+  skill_id: string;
+  skill_name: string;
+  version: string;
+  submitted_by: string;
+  submitter_name: string;
+  decision: string;
+  reason: string;
+  can_decide: boolean;
+  created_at: string;
+  version_detail?: SkillVersion;
+  instructions?: string;
+  proposed_visibility?: string;
+  proposed_acl?: Grant[];
+};
+export type Issue = {
+  can_manage: boolean;
+  issue_id: string;
+  skill_id: string;
+  version: string;
+  description: string;
+  kind: string;
+  status: string;
+  resolution: string;
+  user_id: string;
+  revision: number;
+  created_at: string;
+};
+export type Installation = {
+  installation_id: string;
+  skill_id: string;
+  version: string;
+  client: string;
+  scope: string;
+  workspace_id: string;
+  source: string;
+  status: string;
+  operation: string;
+  files_written: boolean;
+  client_discovered: boolean;
+  reported_at: string | null;
+  replaces?: string;
+};
+export type OAuthGrant = {
+  grant_id: string;
+  client_name: string;
+  client_id: string;
+  scope: string;
+  created_at: string;
+  revoked: boolean;
+};
+export type Audit = {
+  event_id: string;
+  actor: string;
+  action: string;
+  target: string | null;
+  decision: string;
+  result: string;
+  time: string;
+};
+export type Targets = {
+  teams: { id: string; name: string }[];
+  users: { id: string; name: string }[];
+};
+export type Plan = {
+  installation_id?: string;
+  status: string;
+  version: string;
+  skill_id: string;
+  agent_steps: string[];
+  package?: { download_url: string };
+  [key: string]: unknown;
+};

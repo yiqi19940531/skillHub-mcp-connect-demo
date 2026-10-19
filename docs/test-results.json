@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-10-19T11:19:12.630568+08:00",
+  "tests": 64,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "python": "3.12.12",
+  "node": "v24.13.1",
+  "mcp_tools": 32,
+  "cross_port_browser_oauth": true,
+  "native_desktop_acceptance": "core workflows passed for Qoder IDE and Codex desktop; remaining native cases listed in ACCEPTANCE.md",
+  "native_acceptance_recorded_at": "2026-10-19T12:52:27.084905+08:00",
+  "analytics_tests": 4,
+  "analytics_scope": "platform requests, successful downloads and deduplicated Agent reports; current ACL enforced"
+}

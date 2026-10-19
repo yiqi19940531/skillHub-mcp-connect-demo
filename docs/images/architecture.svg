@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<title id="title">Skill Hub 与 Agent 的连接和权限架构</title><desc id="desc">浏览器通过 Web 会话，Qoder、Codex 和自定义 Agent 通过 OAuth MCP，访问同一权限和技能服务；Agent 自己写入本地技能文件。</desc>
+<rect width="1200" height="560" rx="24" fill="#0c1728"/>
+<g font-family="system-ui,sans-serif" text-anchor="middle" fill="#e7f0fa">
+<text x="600" y="55" font-size="28">自己的 Skill Hub，连接不同 Agent，统一身份与团队授权</text>
+<g fill="#142d43" stroke="#36536d" stroke-width="2"><rect x="55" y="100" width="250" height="100" rx="16"/><rect x="365" y="100" width="780" height="100" rx="16"/><rect x="55" y="280" width="1090" height="125" rx="18"/><rect x="55" y="460" width="520" height="65" rx="14"/><rect x="625" y="460" width="520" height="65" rx="14"/></g>
+<text x="180" y="144" font-size="25">Web 浏览器</text><text x="180" y="177" font-size="18" fill="#b4c9dc">员工登录 · 管理与审核</text>
+<text x="755" y="144" font-size="25">Qoder / Codex / 自定义 Agent</text><text x="755" y="177" font-size="18" fill="#b4c9dc">OAuth 浏览器授权 + Streamable HTTP MCP</text>
+<text x="180" y="245" font-size="17" fill="#4ee0bd">Cookie / REST</text><text x="755" y="245" font-size="17" fill="#4ee0bd">真实用户 Token / 32 个工具</text>
+<text x="600" y="325" font-size="27">统一 Skill Hub 服务</text><text x="600" y="362" font-size="20" fill="#b4c9dc">身份与团队 ACL · 分类检索 · 版本文件 · 审核共享 · 收藏 · 安装计划 · 统计审计</text>
+<text x="315" y="500" font-size="20">Hub：本机 JSON / NDJSON / ZIP</text><text x="885" y="500" font-size="20">Agent：校验并写入原生 Skill 目录</text>
+</g><g stroke="#4ee0bd" stroke-width="3" fill="none"><path d="M180 205V228M180 257V274M755 205V228M755 257V274M315 410V452M885 410V452"/></g>
+</svg>

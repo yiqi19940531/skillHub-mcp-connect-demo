@@ -1,0 +1,27 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+data/
+/data-backup-*/
+*.tsbuildinfo
+.env
+frontend/node_modules/
+frontend/dist/
+test-results/
+playwright-report/
+# Native client installations produced by local acceptance runs.
+/.agents/skills/
+/.qoder/skills/
+.DS_Store
+# Local credentials, raw recordings and publication staging never belong in Git.
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+.env.*
+!.env.example
+/private/
+/publication-staging/
