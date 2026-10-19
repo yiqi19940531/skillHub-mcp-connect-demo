@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="观看 Skill Hub 企业技能平台与 Qoder MCP 接入、安装、上传和审核演示。">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; object-src 'none'; base-uri 'self'">
+  <title>Skill Hub · 演示视频</title>
+  <link rel="stylesheet" href="demo-player.css">
+  <script src="demo-player.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <a class="brand" href="https://github.com/yiqi19940531/skillHub-mcp-connect-demo">Skill Hub <span>× MCP</span></a>
+    <a class="repo-link" href="https://github.com/yiqi19940531/skillHub-mcp-connect-demo">项目与运行说明 ↗</a>
+  </header>
+  <main>
+    <div class="intro">
+      <p class="eyebrow">企业技能平台 · 本机 PoC</p>
+      <h1>看看团队技能怎样连接你的 Agent</h1>
+      <p>从账号登录、团队权限到上传审核，再到 Qoder 中的发现、安装与共享。</p>
+      <nav aria-label="选择演示"><a href="#platform">平台功能</a><a href="#qoder">Qoder 接入与共享</a></nav>
+    </div>
+
+    <section class="demo" id="platform" data-player data-title="平台演示">
+      <div class="section-title"><span class="number">01</span><div><h2>平台功能演示</h2><p>登录与搜索、个人收藏、团队隔离、组织管理、独立审核和使用统计。</p></div></div>
+      <div class="video-shell">
+        <video id="platform-video" controls playsinline muted preload="metadata" poster="images/platform-demo-poster.png" aria-label="平台功能演示视频">
+          <source src="videos/platform-demo.mp4" type="video/mp4">
+          当前浏览器不支持视频播放，请下载 MP4 查看。
+        </video>
+      </div>
+      <div class="player-controls">
+        <div class="timeline"><span data-clock>0:00 / --:--</span><input type="range" min="0" max="1000" value="0" step="1" aria-label="平台演示进度条" data-seek><span class="status" data-status role="status">正在加载视频信息</span></div>
+        <div class="buttons">
+          <button class="primary" data-play aria-label="播放平台演示">▶ 播放</button>
+          <button data-restart aria-label="重新播放平台演示">从头播放</button>
+          <button data-skip="-10" aria-label="平台演示后退10秒">−10 秒</button>
+          <button data-skip="10" aria-label="平台演示前进10秒">＋10 秒</button>
+          <label>播放速度 <select data-rate aria-label="平台演示播放速度"><option value="0.75">0.75×</option><option value="1" selected>正常 1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+          <a class="download" href="videos/platform-demo.mp4" download="skillhub-platform-demo.mp4">下载 MP4 ↓</a>
+        </div>
+        <p class="error" data-error hidden></p>
+      </div>
+    </section>
+
+    <section class="demo" id="qoder" data-player data-title="Qoder演示">
+      <div class="section-title"><span class="number">02</span><div><h2>Qoder 连接与技能共享</h2><p>32 个 MCP 接口、团队技能查询、安装校验、原生调用，以及上传后的独立审核与发布。</p></div></div>
+      <div class="video-shell">
+        <video id="qoder-video" controls playsinline muted preload="metadata" poster="images/qoder-demo-poster.png" aria-label="Qoder连接与技能共享视频">
+          <source src="videos/qoder-demo.mp4" type="video/mp4">
+          当前浏览器不支持视频播放，请下载 MP4 查看。
+        </video>
+      </div>
+      <div class="player-controls">
+        <div class="timeline"><span data-clock>0:00 / --:--</span><input type="range" min="0" max="1000" value="0" step="1" aria-label="Qoder演示进度条" data-seek><span class="status" data-status role="status">正在加载视频信息</span></div>
+        <div class="buttons">
+          <button class="primary" data-play aria-label="播放Qoder演示">▶ 播放</button>
+          <button data-restart aria-label="重新播放Qoder演示">从头播放</button>
+          <button data-skip="-10" aria-label="Qoder演示后退10秒">−10 秒</button>
+          <button data-skip="10" aria-label="Qoder演示前进10秒">＋10 秒</button>
+          <label>播放速度 <select data-rate aria-label="Qoder演示播放速度"><option value="0.75">0.75×</option><option value="1" selected>正常 1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+          <a class="download" href="videos/qoder-demo.mp4" download="skillhub-qoder-demo.mp4">下载 MP4 ↓</a>
+        </div>
+        <p class="error" data-error hidden></p>
+      </div>
+    </section>
+    <footer>这是项目演示页面。<a href="https://github.com/yiqi19940531/skillHub-mcp-connect-demo#快速运行">运行自己的 Skill Hub</a>，或阅读<a href="https://github.com/yiqi19940531/skillHub-mcp-connect-demo/blob/main/docs/API.md">接口说明</a>。</footer>
+  </main>
+</body>
+</html>

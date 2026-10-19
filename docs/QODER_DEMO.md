@@ -56,4 +56,4 @@ Hub 检查身份和版本，返回获授权内容及安装计划。Qoder Agent �
 
 ## 视频
 
-[观看 Qoder 连接与技能共享演示](videos/qoder-demo.mp4)
+[观看 Qoder 连接与技能共享演示](https://yiqi19940531.github.io/skillHub-mcp-connect-demo/#qoder)

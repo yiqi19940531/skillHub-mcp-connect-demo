@@ -12,4 +12,4 @@
 | [验证记录](ACCEPTANCE.md) | 自动化和原生客户端已验证内容及剩余范围 |
 | [设计基线](IMPLEMENTATION_PLAN.md) | V1.1 计划及原文附录 |
 
-[平台视频](videos/platform-demo.mp4) · [Qoder 视频](videos/qoder-demo.mp4)
+[平台视频](https://yiqi19940531.github.io/skillHub-mcp-connect-demo/#platform) · [Qoder 视频](https://yiqi19940531.github.io/skillHub-mcp-connect-demo/#qoder)

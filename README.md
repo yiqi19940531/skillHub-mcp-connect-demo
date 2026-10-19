@@ -81,8 +81,8 @@ Agent 读取用户选择的本地 Skill，确认团队和共享范围，申请�
 需要 Python 3.12+、Node.js 22.12+ / 24 和 npm。
 
 ```bash
-git clone https://github.com/yiqi19940531/skilHub-mcp-connect-demo.git
-cd skilHub-mcp-connect-demo
+git clone https://github.com/yiqi19940531/skillHub-mcp-connect-demo.git
+cd skillHub-mcp-connect-demo
 ./scripts/setup.sh
 ./scripts/start.sh
 ```
@@ -190,15 +190,25 @@ python3 scripts/check_publication.py
 
 ## 演示视频
 
-图片介绍了主要能力，视频展示完整操作链路：
+**[打开完整视频播放器](https://yiqi19940531.github.io/skillHub-mcp-connect-demo/)**，点击播放即可观看。支持暂停、拖动进度、全屏及 0.75～2 倍速选择，默认正常速度。
 
-[![平台功能演示](docs/images/platform-demo-poster.png)](docs/videos/platform-demo.mp4)
+下方为循环播放的短预览，点击动图打开对应的完整视频。
 
-[![Qoder 连接与技能共享](docs/images/qoder-demo-poster.png)](docs/videos/qoder-demo.mp4)
+### 平台功能演示
 
-| 演示 | 内容 |
-| --- | --- |
-| [平台功能演示](docs/videos/platform-demo.mp4) | 登录、发现与收藏、团队隔离、组织管理和独立审核 |
-| [Qoder 连接与技能共享](docs/videos/qoder-demo.mp4) | MCP 工具、团队技能查询、安装与原生调用、上传审核和团队发布 |
+[![平台功能动态预览，点击播放完整视频](docs/images/platform-demo-preview.gif)](https://yiqi19940531.github.io/skillHub-mcp-connect-demo/#platform)
 
-GitHub 如未内嵌播放，可打开视频文件查看，或从 [Release 演示附件](https://github.com/yiqi19940531/skilHub-mcp-connect-demo/releases) 下载。字幕文件与视频放在同一目录。
+登录、发现与收藏、团队隔离、组织管理、独立审核和使用统计。完整视频约 1 分 11 秒。
+
+### Qoder 连接与技能共享
+
+[![Qoder 动态预览，点击播放完整视频](docs/images/qoder-demo-preview.gif)](https://yiqi19940531.github.io/skillHub-mcp-connect-demo/#qoder)
+
+MCP 工具、团队技能查询、安装与原生调用、上传审核和团队发布。完整视频约 54 秒。
+
+| 演示 | 在线播放 | MP4 下载 |
+| --- | --- | --- |
+| 平台功能 | [打开播放器](https://yiqi19940531.github.io/skillHub-mcp-connect-demo/#platform) | [下载平台视频](https://github.com/yiqi19940531/skillHub-mcp-connect-demo/releases/download/v1.1.1/platform-demo.mp4) |
+| Qoder 接入与共享 | [打开播放器](https://yiqi19940531.github.io/skillHub-mcp-connect-demo/#qoder) | [下载 Qoder 视频](https://github.com/yiqi19940531/skillHub-mcp-connect-demo/releases/download/v1.1.1/qoder-demo.mp4) |
+
+视频及对应中文字幕也保存在仓库 `docs/videos/`，可下载到本机播放器观看。
